@@ -18,7 +18,7 @@ var gulp = require('gulp'),
 
   browserSync = require("browser-sync"),
   reload = browserSync.reload,
-  deploy = require('gulp-deploy-git');
+  ghPages = require('gulp-gh-pages');
 
 var path = {
   build: {
@@ -94,10 +94,8 @@ gulp.task('image:build', function () {
 });
 
 gulp.task('deploy', function() {
-    return gulp.src('dist/**/*')
-        .pipe(deploy({
-            repository: 'https://github.com/Pasha28198/MidGard'
-        }));
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 gulp.task('fonts:build', function() {
