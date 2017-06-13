@@ -106,7 +106,7 @@ q:before, q:after {
     line-height: 29px;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 116px;
+    margin-bottom: 60px;
 }
 .title::after{
     content:' ';
@@ -121,7 +121,7 @@ header{
     width: 100%;
 }
 .wrapper{
-     max-width: 1140px;
+     max-width: 1160px;
      margin: 0 auto;
 }
 .lang_menu{
@@ -130,21 +130,25 @@ header{
     min-height: 154px;
 }
 .language{
-    min-height: 95px;
+    min-height: 90px;
+    position: relative;
+    max-width: 937px;
 }
 
 .language li{
-    font-family: HelveticaNeueCyr-Black;
     list-style: none;
     float:left;
-    padding:5px 5px;
-    width: 30px;
-    height: 30px;
 }
-
+.language li a{
+    font-family: HelveticaNeueCyr-Black;
+    font-size:16px;
+    text-transform: uppercase;
+    padding:8px 4px 9px 4px;
+}
 .language_select{
-    float:right;
-    margin-top:26px;
+    position:absolute;
+    right: 12px;
+    top:28px;
 }
 
 
@@ -158,72 +162,68 @@ header{
 -*/
 .logo_menu{
     min-height:60px;
-    min-width:100%;
+    max-width:937px;
+    position: relative;
 }
 .logo{
-    width: 153px;
-    height: 41px;
-    float: left;
-}
-.container_header{
-    width: 1000%;
-    height: 154px;
-    background-color: #ffffff;
+  float: left;
 }
 .menu{
-    margin-right: 5px;
-    list-style: none;
-    float: left;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
 }
 .menu li{
-    display: block;
-    float:left;
-    margin-left:30px;
-    width: 80px;
+    list-style: none;
     color: #5b5b5b;
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 17px;
     text-align: center  ;
-
+    margin-left:22px;
+    vertical-align: middle;
 }
-.menu li:first-child{
+.menu:first-child{
     margin-left: 0;
 }
-.menu ul{
-    margin-right: 4px;
+.menu:last-child{
+    margin-right: 12px;
 }
-
+.last{
+    padding-top:12px;
+}
+.menu li a{
+     font-size:15px;
+     font-family: HelveticaNeueCyr-Black;
+     color:#5b5b5b;   
+}
 /*-
 ---------------------
 ---------------------
 --------------------
 ------------------*/
 .coll{
+    width: 213px;
+    text-align: center;
     float:left;
-    min-height: 154px;
-    max-width: 194px;
+    height: 153px;
     background-color: #f3f3f3;
-    padding: 80px 36px 13px 36px;
+    padding: 70px 31px 10px 21px;
 }
-.coll span{
+.coll > span{
     display: block;
-    font: 18px HelveticaNeueCyr;
+    font-size: 17px;
+    font-family:  HelveticaNeueCyr-Black;
     color:#535353;
+    margin-bottom: 5px;
 }
 .coll_me{
-    margin-top:5px;
     color:#626262;
-    display: block;
-    font-size: 11px;
+    font-size: 10px;
     font-family: ProximaNova-Bold;
-    height: 33px;
-    padding:13px;
     background-color: #ffdc00;
     border:none;
     border-radius:11px;
-    width: 110px;
     text-transform: uppercase;
-    padding:12px 13px;
+    padding:12px 14px 14px 13px;
 }
 /*-----------------------
 --------------------------
@@ -237,14 +237,14 @@ header{
 .slider {
  z-index: 9;
  width: 100%;
- height: 700px;
+ height: 740px;
  overflow: hidden;
  margin: 0 0 7px;
  position: relative;
  }
  .image_slide{
     float:left;
-    height: 730px;
+    height: 740px;
     width: inherit;
 }
 .banner .slick-dots li.slick-active button:before{
@@ -257,8 +257,8 @@ header{
 }
 
 .banner .slick-dots{
-    bottom: 28px;
-    right: 480px;
+    bottom: 2%;
+    right: 25%;
     text-align: right;
 }
  
@@ -269,11 +269,11 @@ header{
    min-height: 740px;
  }
  .board1{
-     position: absolute;
+    position: absolute;
      height:218px; 
      width:475px;
      top:84px;
-     left:105px;
+     left:110px;
      background-color: #7db10c;
      color:white;
      padding: 55px 52px 70px 47px;
@@ -294,7 +294,7 @@ header{
 
  .board2{
      position:absolute;
-     left: 105px;
+     left: 110px;
      top:323px; 
      height: 144px;
      width:475px;
@@ -319,20 +319,25 @@ header{
 
 .esse{
     min-height: 853px;
-    padding: 115px 15px 122px 15px;
+    padding: 107px 15px 0 15px;
 
 }
 .esse_blocks{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding:0px 15px 122px 15px;
+    justify-content: space-between;
+    padding:0px 25px 0 15px;
     text-align: center;
 }
+
+.block1{
+ margin-top:0;
+}
+
 .esse_blocks_block{
     width:255px; 
     min-height:192px;
-    margin-top: 56px;
+    margin-top: 33px;
     
 }
 .zoom{
@@ -344,7 +349,7 @@ header{
             transform: scale(1.2);
 }
 .block_description{
-    margin-top:18px;
+    margin-top:15px;
 }
 .block_description h3{ 
 color: #555555;
@@ -385,12 +390,12 @@ text-transform: uppercase;
     text-align: center;
     min-height: 681px;
     background-color: #e8e8e8;
-    padding:111px 0 119px 0;
+    padding:102px 0 10px 0;
     transition: background-color,2s;
 }
 .wrapper_for_children{
 
-    margin-top:107px;
+    margin-top:105px;
 }
 .forChildren:hover{
     background: #fff;
@@ -455,10 +460,10 @@ text-transform: uppercase;
     font-family: RobotoSlab-Regular;
     font-size: 17px;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 25px;
 }
 .coll_visit{
- margin:58px 0 0 47px;
+ margin:30px 0 0 47px;
  display: flex;
  flex-wrap: nowrap;
 }  
@@ -466,30 +471,35 @@ text-transform: uppercase;
 
 .parent_botton{
     letter-spacing: 2px;
-    padding: 11px 25px 14px 26px;
+    line-height: 2px;
+    padding: 0 25px 0 26px;
     border-radius: 10px;
-    border: 2px solid #f4be2b;
+    border: none;
     background-color: #f4be2b;
     color: #ffffff;
     font-family: HelveticaNeueCyr-Black;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+    font-size: 10px;
     text-transform: uppercase;
-    float:left;
+    letter-spacing: 2px;
+    width: 225px;
+    height: 36px;
+
 }
 .col_parent{ 
-    background-color: #f4be2b;
+    display: block;
+    width: 37px;
+    height: 36px;
+    border: none;
+    background: #f4be2b url('../img/phone.png') no-repeat center center;
     border-radius: 10px;
-    float:left;
     margin-left:15px;
     padding:11px 20px 13px 20px;
-}
+    }
 
 
 .startSvhool{
     min-height: 490px;
-    padding:62px 0 72px 0;
+    padding:45px 0 62px 0;
     transition: background-color,2s;
 }
 .startSvhool:hover{
@@ -506,7 +516,7 @@ text-transform: uppercase;
 
 .midleSchool{
     background-color: #e8e8e8;
-    padding:62px 0 72px 0;
+    padding:52px 0 72px 0;
      transition: background-color,2s;
 }
 .midleSchool:hover{
@@ -525,7 +535,7 @@ text-transform: uppercase;
 
 .oldSchool{
     background-color:  #e8e8e8;
-    padding:62px 0 72px 0;
+    padding:110px 0 190px 0;
     transition: background-color,2s;
 }
 .oldSchool:hover{
@@ -569,7 +579,7 @@ text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 150px 80px 152px  80px;
+    padding: 145px 80px 152px  80px;
 }
 .flex_strategy{
     display: flex;
@@ -627,19 +637,19 @@ text-transform: uppercase;
 ------------------------------------
 ----------------------------------*/
 .value{
-    padding-top:159px;
+    padding-top:135px;
 }
 .value_boxes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:0px 156px 190px 156px;
+    padding:0px 156px 180px 110px;
 }
 .value_box{
     text-align: center;
     height: 192px;
     width: 262px;
-    margin-top:32px;
+    margin-top:29px;
 }
 
 /*--------------------------------
@@ -657,7 +667,7 @@ text-transform: uppercase;
     font-style: italic;
     line-height: 36px;
     text-align: center;
-    padding:201px 0 310px 0;
+    padding:195px 0 310px 0;
 }
 /*--------------------------------
 -----------------------------------
@@ -667,9 +677,10 @@ text-transform: uppercase;
 .our_comand{
     min-height: 718px;
     background: #f8f8f8;
-    padding:148px 0 153px 0;
+    padding:140px 0 115px 0;
 }
 .wrapper_slide{
+    padding: 10px;
     max-width:1110px; 
     margin: 0 auto;
 }
@@ -685,12 +696,14 @@ text-transform: uppercase;
     margin-top:61px;
     width: 595px;
     height: 119px;
+    float:left;
+}
+.slide_text > p{
     color: #404040;
-    font-family: HelveticaNeueCyr-Black;
+    font-family: HelveticaNeueCyr-Roman;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
-    float:left;
 }
 
 /*--------------------------------
@@ -716,7 +729,7 @@ text-transform: uppercase;
 }
 .preferenses{
     position: absolute;
-    right: 309px;
+    right: 115px;
     min-height: 690px;
     z-index: 10000;
     background: #ffffff;
@@ -945,6 +958,7 @@ footer ul{
     .logo_menu{
     min-height:60px;
     width: 100%;
+    position: static;
     }
     .menu-trigger{
         display: block;
@@ -955,6 +969,14 @@ footer ul{
         height: 24px;
     }
     /*--------------
+    -------------
+    -------------
+    ------------
+    ---------*/
+    .esse{
+        padding: 0;
+    }
+     /*--------------
     -------------
     -------------
     ------------
@@ -1226,6 +1248,18 @@ margin-right: 10px;
  ------------------
  ---------------
  -------------*/
+
+.esse_blocks_block{
+    margin: 0 auto;
+}
+
+
+ /*------------------
+ ------------------
+ ---------------
+ -------------*/
+
+
  .our_comand{
     min-height: 718px;
     background: #f8f8f8;
